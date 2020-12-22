@@ -1,5 +1,5 @@
 body{
-    min-width: 1600px;
+    min-width: 1280px;
 }
 header{
     position: relative;
@@ -27,7 +27,7 @@ header .lnb li a{
     position: relative;
     display: block;
     height: 81px;
-    padding: 0 32px;
+    padding: 0 20px;
     font-size: 17px;
     line-height: 81px;
 }
@@ -81,6 +81,9 @@ header .spot li:first-child::after{
 header .spot li:last-child a{
     padding-right: 0;
 }
+
+/*슬라이드*/
+
 .visual{
     padding: 0 50px;
     position: relative;
@@ -197,3 +200,75 @@ header .spot li:last-child a{
 .visual .content .slide5 {
     background: url(bg_main05.jpg) no-repeat center;
 }
+
+/*content*/
+
+.product a{
+    display: block;
+    color: #001829;
+    font-size: 15px;
+}
+.product a:hover{
+    color: #2d5b79;
+    font-weight: bold;
+}
+.product a::before{
+    content : "";
+    display: block;
+    width:64px; /*다양한 아이콘이 있을 시 모두 포함시킬수 있는 크기로 맞추기*/
+    height: 52px;
+    background: url(sp_com.png) no-repeat;
+    margin: 0 0 26px;
+}
+.product ul{
+    
+    text-align: center;
+    /*padding 순서 top right bottom left*/
+    padding: 46px 0 41px 0;
+    font-size: 0px;
+}
+.product li{
+    display: inline-block; 
+    /*inline-block에 자동 생성되는 공백을 지울려면 부모에 font-size : 0 해야함*/
+    text-align: center;
+    padding: 0 55px;
+}
+.product li:nth-child(1) a::before {
+    background-position: -3px -118px;
+    /*좌표는 해당 아이콘이 그림의 (0, 0)으로 오게 만드는 값으로 넣기*/
+}
+.product li:nth-child(2) a::before {
+    background-position: -75px -118px;
+}
+.product li:nth-child(3) a::before{
+    background-position: -148px -118px;
+}
+.product li:nth-child(4) a::before{
+    background-position: -219px -118px;
+}
+.product li:nth-child(5) a::before{
+    background-position: -292px -118px;
+}
+.product li:nth-child(6) a::before{
+    background-position: -364px -118px;
+}
+.product li:nth-child(1) a:hover::before{
+    background-position: -3px -184px;
+}
+.product li:nth-child(2) a:hover::before{
+    background-position: -75px -184px;
+}
+.product li:nth-child(3) a:hover::before{
+    background-position: -148px -184px;
+}
+.product li:nth-child(4) a:hover::before{
+    background-position: -219px -184px;
+}  
+.product li:nth-child(5) a:hover::before{
+    background-position: -292px -184px;
+}
+.product li:nth-child(6) a:hover::before{
+    background-position: -364px -184px;
+}
+
+/*magerzin*/
