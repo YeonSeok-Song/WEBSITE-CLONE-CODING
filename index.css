@@ -413,13 +413,14 @@ header .spot li:last-child a{
 /*banner*?*/
 
 .notice > div {
-    width: 1180px;
+    width: 1200px;
     margin: 0 auto;
     padding: 40px 0 0 0;
     height: 320px;
 }
 .notice > div .top > ul{
     float: left;
+    padding: 0 20 0 0;
 }
 .notice > div .top > ul a:hover{
     background: rgba(45, 91, 121, 0.5);
@@ -428,8 +429,8 @@ header .spot li:last-child a{
 .notice > div .top > ul a span{
     display: block;
     position: relative;
-    top:10px;
     opacity: 0;
+    top: 10px;
     transition: all 0.5s;
     font-weight: normal;
     font-size: 15px;
@@ -439,27 +440,26 @@ header .spot li:last-child a{
     display: block;
     width: 280px;
     height: 280px;
-    padding: 100px 0 0;
+    padding: 150px 0 0;
     box-sizing: border-box;
     text-align: center;
     font-size: 17px;
     font-weight: bold;
     color: white;
-    
 }
 .notice > div .top > ul a:hover span{
     top: 0; /*애니메이션에는 동작만 입력할 것*/
     opacity: 1;
 }
-.notice > div .top > ul li{
+.notice > div .top > ul li
+{
     float: left;
-    padding: 0 20px 0 0;
 }
 .notice > div .top > ul li:nth-child(1){
     background: url(bg_key_link03.jpg) no-repeat;
     background-size: contain;
-    
 }
+/*
 .notice > div .top > ul li:nth-child(2){
     background: url(notice_img.png) no-repeat;
     background-size: 100% 100%;
@@ -469,47 +469,100 @@ header .spot li:last-child a{
     background: url(news_img.png) no-repeat;
     background-size: 100% 100%;
 }
+
 .notice > div .top > ul li:nth-child(3) a{
     color: black;
 }
+*/
 .notice > div .top > div {
+    position: relative;
     float: left;
     width: 280px;
     height: 280px;
-    padding: 36px 20px 0;
     background: #f2f0ed;
     box-sizing: border-box;
+    margin: 0 20 0 0;
+    padding: 36px 0 0;
+}
+.notice > div .top > .search {
+    
+    padding: 36px 20px 0;
+    
 }
 .notice > div .top > div div{
     padding: 0 0 10px;
 }
-.notice > div .top > div h2{
-    font-size: 17px;
-    text-align: center;
-    color: black;
-    line-height: 100%;
+.notice > div .top > .search h2{
     padding: 0 0 29 0;
 }
-.notice > div .top > div select,
-.notice > div .top > div input
+.notice > div .top > div h2{
+    height: 10%;
+    line-height: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #2d5b79;
+}
+.notice > div .top > .search select,
+.notice > div .top > .search input
  {
     width: 100%;
     height: 45px;
     border: none;
     text-indent: 20px;
 }
-.notice > div .top > div input::-webkit-input-placeholder {
+.notice > div .top > .search input::-webkit-input-placeholder {
     color : 949394;
     font-size: 14px;
     
 }
-.notice > div .top > div a{
+.notice > div .top > .search a{
     margin: 20 0 0 0;
     display: block;
     height: 45px;
     line-height: 45px;
     text-align: center;
     color: white;
-    background: #2d5b79;
     font-size: 16px;
+    background: #2d5b79;
+}
+.notice > div .top > .article > a{
+    position: absolute;
+    right: 23px;
+    top: 24px;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color:transparent;
+    background: url(sp_com.png) -196px -60px white no-repeat;
+}
+/*
+.notice > div .top > .article > div > a {
+    display: block;
+    width: 100%;
+    border-top: white solid 2px;
+    border-width: 30%;
+    font-size: 16px;
+    
+}
+*/
+.notice > div .top > .article > div > a > span {
+    display: block;
+    font-size: 16px;
+    margin: 10 22 0 22;
+}
+
+.notice > div .top > .article > div > a p {
+    margin: 20px 0 0 0;
+    font-size: 13px;
+    color:gray;
+}
+.notice > div .top > .article > .ar-content {
+    display: block;
+    height: 90%;
+}
+.notice > div .top > .article > .ar-content > a{
+    display: block;
+    width: 100%;
+    height: 45%;
+    border-top: white solid 2px;
 }
